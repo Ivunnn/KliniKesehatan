@@ -27,7 +27,7 @@ public class FrameMasuk extends javax.swing.JFrame {
     private void initComponents() {
 
         input_telepon = new javax.swing.JTextField();
-        btn_login = new javax.swing.JButton();
+        btn_masuk = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -35,39 +35,28 @@ public class FrameMasuk extends javax.swing.JFrame {
 
         input_telepon.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         input_telepon.setBorder(null);
-        input_telepon.addActionListener(new java.awt.event.ActionListener() {
+        getContentPane().add(input_telepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 450, 560, 50));
+
+        btn_masuk.setBackground(new java.awt.Color(73, 167, 217));
+        btn_masuk.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        btn_masuk.setForeground(new java.awt.Color(255, 255, 255));
+        btn_masuk.setText("MASUK");
+        btn_masuk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                input_teleponActionPerformed(evt);
+                btn_masukActionPerformed(evt);
             }
         });
-        getContentPane().add(input_telepon, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 280, 20));
+        getContentPane().add(btn_masuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 573, 360, 70));
 
-        btn_login.setBackground(new java.awt.Color(73, 163, 195));
-        btn_login.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 18)); // NOI18N
-        btn_login.setForeground(new java.awt.Color(255, 255, 255));
-        btn_login.setText("MASUK");
-        btn_login.setToolTipText("");
-        btn_login.setAutoscrolls(true);
-        btn_login.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_loginActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btn_login, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 180, 50));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui_componen/Desktop - 5.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui_componen/Masuk.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1440, 1020));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void input_teleponActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_input_teleponActionPerformed
+    private void btn_masukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_masukActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_input_teleponActionPerformed
-
-    private void btn_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_loginActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_loginActionPerformed
+    }//GEN-LAST:event_btn_masukActionPerformed
 
     /**
      * @param args the command line arguments
@@ -105,7 +94,7 @@ public class FrameMasuk extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn_login;
+    private javax.swing.JButton btn_masuk;
     private javax.swing.JTextField input_telepon;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
